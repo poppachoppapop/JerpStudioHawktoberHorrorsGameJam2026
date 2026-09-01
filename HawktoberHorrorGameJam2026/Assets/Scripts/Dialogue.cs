@@ -17,17 +17,23 @@ public class Dialogue : MonoBehaviour
     private int textIterId;
     private int textProgressId;
     
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         this.textComponent.text = string.Empty;
-        this.StartDialogue();
+    }
+
+    void Awake()
+    {
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        #if TEST_MODE  //* uncomment TEST_MODE to enable 
+        //* uncomment TEST_MODE to enable 
+        #if TEST_MODE 
             if(Keyboard.current.rightArrowKey.wasPressedThisFrame)
             {
                 string line = this.textLines[this.textIterId];
@@ -50,9 +56,10 @@ public class Dialogue : MonoBehaviour
         #endif
     }
     
-    void StartDialogue()
+    public void StartDialogue(string[] textInput)
     {
         this.textIterId = 0;
+        this.textLines = textInput;
         StartCoroutine(this.TypeLine());
     }
 
@@ -95,4 +102,6 @@ public class Dialogue : MonoBehaviour
             yield return new WaitForSeconds(this.textSpeed);
         }
     }
+
+
 }

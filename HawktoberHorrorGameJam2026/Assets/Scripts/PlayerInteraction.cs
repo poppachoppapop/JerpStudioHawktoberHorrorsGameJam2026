@@ -16,7 +16,14 @@ public class PlayerInteraction : MonoBehaviour
 
     private GameObject interactableObject;
 
-    private string objectText;
+    private string[] objectText;
+    [SerializeField]
+    private Dialogue dialogueBox;
+
+    void Start()
+    {
+        //dialogueBox = transform.GetChild(0).transform.GetChild(0).GetComponent<Dialogue>();
+    }
 
     void Update()
     {
@@ -36,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (col.gameObject.tag == "Interactable")
         {
-            objectText = "There's nothing here";
+            objectText[0] = "There's nothing here";
             interactableObject = null;
         }
     }
@@ -53,6 +60,8 @@ public class PlayerInteraction : MonoBehaviour
         {
             Debug.Log(objectText);
             //Input textbox stuff here and pass objectText into it
+            dialogueBox.StartDialogue(objectText);
+
         }
 
     }
