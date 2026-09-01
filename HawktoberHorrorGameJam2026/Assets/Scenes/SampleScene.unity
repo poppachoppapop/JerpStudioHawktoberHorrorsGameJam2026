@@ -510,7 +510,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42706123c1a818f48956cd0d1bb05695, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObj
-  textInput: There is nothing here
+  textInput:
+  - This is a box.
+  - moooooooooo
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!61 &821927240
 BoxCollider2D:
   m_ObjectHideFlags: 0
