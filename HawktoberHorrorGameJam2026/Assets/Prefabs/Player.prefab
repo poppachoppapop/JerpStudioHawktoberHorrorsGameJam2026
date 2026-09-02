@@ -348,6 +348,7 @@ GameObject:
   - component: {fileID: 7061649348671633847}
   - component: {fileID: 1077348560872383250}
   - component: {fileID: 4383340713278290507}
+  - component: {fileID: -8438791923103772250}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -443,9 +444,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   movement: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  maxSpeed: 8
-  acceleration: 70
-  deceleration: 100
+  maxSpeed: 5
+  acceleration: 50
+  deceleration: 70
   stepTimer: 100
   stepTimerMax: 0.5
   steps:
@@ -527,7 +528,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.48}
+  m_Offset: {x: 0, y: -0.82}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -537,7 +538,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.89, y: 1.11}
+  m_Size: {x: 0.75, y: 0.54}
   m_EdgeRadius: 0
 --- !u!82 &4383340713278290507
 AudioSource:
@@ -636,3 +637,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!81 &-8438791923103772250
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7956966969155907400}
+  m_Enabled: 1
