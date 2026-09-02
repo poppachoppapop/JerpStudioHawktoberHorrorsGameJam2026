@@ -340,24 +340,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &770849857 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7956966969155907400, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
-  m_PrefabInstance: {fileID: 1088859081}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &770849864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770849857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1418d0420e6339f43a47ad49faf93544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
-  interact: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!1 &821927234
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,11 +493,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InteractableObj
   textInput:
-  - This is a box.
-  - moooooooooo
-  - 
-  - 
-  - 
+  - line0
+  - line1
+  - line2
+  - line3
+  - line4
   - 
   - 
   - 
@@ -632,10 +614,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7956966969155907400, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 770849864}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -17,13 +17,17 @@ public class PlayerInteraction : MonoBehaviour
     private GameObject interactableObject;
 
     private string[] objectText;
+
+
     [SerializeField]
     private Dialogue dialogueBox;
+    private bool dialogueIsActive;
 
     void Start()
     {
         //dialogueBox = transform.GetChild(0).transform.GetChild(0).GetComponent<Dialogue>();
-    }
+       CloseDialogue(); 
+    } 
 
     void Update()
     {
@@ -55,14 +59,32 @@ public class PlayerInteraction : MonoBehaviour
         // ITEM INTERACTION
         // EVENT INTERACTION
 
-
         if (interactableObject != null && interact.action.WasPressedThisFrame())
         {
             Debug.Log(objectText);
             //Input textbox stuff here and pass objectText into it
-            dialogueBox.StartDialogue(objectText);
-
+            if (dialogueIsActive)
+            {
+                if (!dialogueBox.NextLine()) CloseDialogue(); 
+            }
+            else
+            {
+                ActivateDialogue();
+            }
         }
+    }
 
+    void ActivateDialogue()
+    {
+            dialogueBox.gameObject.SetActive(true);
+            dialogueBox.StartDialogue(objectText);
+            dialogueIsActive = true;
+    }
+
+    void CloseDialogue()
+    {
+            dialogueBox.resetDialogue();
+            dialogueBox.gameObject.SetActive(false);
+            dialogueIsActive = false;
     }
 }

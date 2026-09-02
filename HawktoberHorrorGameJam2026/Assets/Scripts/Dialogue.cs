@@ -1,11 +1,11 @@
 //might be super inefficient because baby's first dialogue box xd
 
-// #define TEST_MODE //* (enables keyboard input for debug use only, uncomment to enable)
-
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System.Collections;
 using TMPro;
+using System;
+using UnityEngine.UI;
 
 
 public class Dialogue : MonoBehaviour
@@ -15,84 +15,53 @@ public class Dialogue : MonoBehaviour
 
     public string[] textLines;
     private int textIterId;
-    private int textProgressId;
-    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        this.textComponent.text = string.Empty;
+        this.resetDialogue();
     }
 
-    void Awake()
+    public void StartDialogue(string[] textInput) //! use this to trigger text box after the object is set active
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //* uncomment TEST_MODE to enable 
-        #if TEST_MODE 
-            if(Keyboard.current.rightArrowKey.wasPressedThisFrame)
-            {
-                string line = this.textLines[this.textIterId];
-                if (this.textComponent.text == line)
-                {
-                    this.NextLine();
-                }
-                else
-                {
-                    StopAllCoroutines();
-                    this.textComponent.text = line;
-                }
-            }
-
-            if (Keyboard.current.leftArrowKey.wasPressedThisFrame)
-            {
-                StopAllCoroutines();
-                this.PrevLine();    
-            }
-        #endif
-    }
-    
-    public void StartDialogue(string[] textInput)
-    {
-        this.textIterId = 0;
         this.textLines = textInput;
-        StartCoroutine(this.TypeLine());
+        this.LoadLine();
     }
 
-    void NextLine()
+    public bool NextLine()
     {
-       ++this.textIterId; 
-       if (this.textIterId >= this.textLines.Length)
-        {
-            this.textIterId--;
-            Debug.Log("End of textLines array (Cannot display next line)\n");
-        }
-        else if (this.textIterId <= this.textProgressId) // already-seen text
-        { 
-            this.textComponent.text = this.textLines[this.textIterId];           
-        } 
-        else //unread text
-        {
-            this.textComponent.text = string.Empty;
-            StartCoroutine(this.TypeLine());
-            ++this.textProgressId;
-        }
+        int currId = this.textIterId;
+        int nextId = currId + 1;
 
-   }
-   
-    void PrevLine()
-    {
-       if (this.textIterId == 0)
+       string currLine = this.textLines[currId];
+
+        if (this.textComponent.text != currLine)
         {
-            Debug.Log("Start of textLines array (Cannot display previous line)\n");
-            return;
+            StopAllCoroutines();
+            this.textComponent.text = currLine;
         }
-        this.textComponent.text = this.textLines[--this.textIterId];
-   }
+        else 
+        {
+            if (nextId >= this.textLines.Length || this.textLines[nextId] == string.Empty)
+            {
+                Debug.Log("End of textLines array (Cannot display next line)\n");
+                return false;
+            }
+ 
+            this.textIterId++;
+            this.LoadLine();
+        };
+
+        return true;
+    }
+
+    public void resetDialogue()
+    {
+        this.textComponent.text = string.Empty;
+        this.textLines = Array.Empty<string>();
+        this.textIterId = 0;
+    }
 
     IEnumerator TypeLine()
     {
@@ -101,6 +70,11 @@ public class Dialogue : MonoBehaviour
             this.textComponent.text += c;
             yield return new WaitForSeconds(this.textSpeed);
         }
+    }
+    void LoadLine()
+    {
+        this.textComponent.text = string.Empty;
+        StartCoroutine(TypeLine());
     }
 
 
