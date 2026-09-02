@@ -47,7 +47,6 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (col.gameObject.tag == "Interactable")
         {
-            objectText[0] = "There's nothing here";
             interactableObject = null;
         }
     }
