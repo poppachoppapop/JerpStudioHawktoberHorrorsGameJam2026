@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1a460013aa680f74dab59c3671eacfb0
+guid: acd73cb2078d858479485092deae1287
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -875317385054737588
-    second: tableandlamp_0
+      213: 229751294666284899
+    second: rainwindow_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tableandlamp_0
+      name: rainwindow_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 0
-        width: 17
-        height: 21
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c4ba616d97f3ad3f0800000000000000
-      internalID: -875317385054737588
+      spriteID: 36f1541d59d303300800000000000000
+      internalID: 229751294666284899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rainwindow_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704c2541474d65b4bb7e6ef2682880a9
+      internalID: 1373417086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rainwindow_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017d3a584ccaab84f99fa82798020f22
+      internalID: 1969688534
       vertices: []
       indices: 
       edges: []
@@ -125,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 54640427e5ee0014d80d9a078e7dd13f
     internalID: 0
     vertices: []
     indices: 
@@ -133,9 +177,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      tableandlamp_0: -875317385054737588
+      rainwindow_0: 229751294666284899
+      rainwindow_1: 1373417086
+      rainwindow_2: 1969688534
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
