@@ -26,7 +26,7 @@ public class PlayerInteraction : MonoBehaviour
     void Start()
     {
         //dialogueBox = transform.GetChild(0).transform.GetChild(0).GetComponent<Dialogue>();
-       CloseDialogue(); 
+       ToggleDialogue(false); 
     } 
 
     void Update()
@@ -43,7 +43,7 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-        void OnTriggerExit2D(Collider2D col)
+    void OnTriggerExit2D(Collider2D col)
     {
         if (col.gameObject.tag == "Interactable")
         {
@@ -62,28 +62,29 @@ public class PlayerInteraction : MonoBehaviour
         {
             Debug.Log(objectText);
             //Input textbox stuff here and pass objectText into it
-            if (dialogueIsActive)
-            {
-                if (!dialogueBox.NextLine()) CloseDialogue(); 
-            }
-            else
-            {
-                ActivateDialogue();
-            }
+            if (!dialogueIsActive) 
+                ToggleDialogue(true);
+
+            else if (!dialogueBox.NextLine()) 
+                ToggleDialogue(false); 
         }
     }
-
-    void ActivateDialogue()
+    void ToggleDialogue(bool active)
     {
-            dialogueBox.gameObject.SetActive(true);
-            dialogueBox.StartDialogue(objectText);
-            dialogueIsActive = true;
+        if (!dialogueBox) return; //terminate early if null dialogueBox
+
+	    if (active) 
+	    {
+		    dialogueBox.gameObject.SetActive(true);
+		    dialogueBox.StartDialogue(objectText);
+		    dialogueIsActive = true;
+	    }
+	    else
+	    {
+		    dialogueBox.resetDialogue();
+		    dialogueBox.gameObject.SetActive(false); //?error "Object reference not set to an instance of an object" here. Is this because the reference is lost when inactive?.
+		    dialogueIsActive = false;
+	    }
     }
 
-    void CloseDialogue()
-    {
-            dialogueBox.resetDialogue();
-            dialogueBox.gameObject.SetActive(false);
-            dialogueIsActive = false;
-    }
 }

@@ -1,7 +1,5 @@
 //might be super inefficient because baby's first dialogue box xd
-
 using UnityEngine;
-using UnityEngine.InputSystem;
 using System.Collections;
 using TMPro;
 using System;
@@ -20,62 +18,58 @@ public class Dialogue : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        this.resetDialogue();
+        resetDialogue();
+    }
+
+    IEnumerator TypeLine()
+    {
+        foreach (char c in textLines[textIterId].ToCharArray())
+        {
+            textComponent.text += c;
+            yield return new WaitForSeconds(textSpeed);
+        }
+    }
+    void LoadLine()
+    {
+        textComponent.text = string.Empty;
+        StartCoroutine(TypeLine());
     }
 
     public void StartDialogue(string[] textInput) //! use this to trigger text box after the object is set active
     {
-        this.textLines = textInput;
-        this.LoadLine();
+        textLines = textInput;
+        LoadLine();
     }
 
     public bool NextLine()
     {
-        int currId = this.textIterId;
+        int currId = textIterId;
         int nextId = currId + 1;
 
-       string currLine = this.textLines[currId];
+        string currLine = textLines[currId];
 
-        if (this.textComponent.text != currLine)
+        if (textComponent.text != currLine)
         {
             StopAllCoroutines();
-            this.textComponent.text = currLine;
+            textComponent.text = currLine;
         }
-        else 
+        else if (nextId >= textLines.Length || textLines[nextId] == string.Empty)
         {
-            if (nextId >= this.textLines.Length || this.textLines[nextId] == string.Empty)
-            {
-                Debug.Log("End of textLines array (Cannot display next line)\n");
-                return false;
-            }
- 
-            this.textIterId++;
-            this.LoadLine();
-        };
-
+            Debug.Log("End of textLines array (Cannot display next line)\n");
+            return false;
+        }
+        else
+        {
+            textIterId++;
+            LoadLine();
+        }
         return true;
     }
 
     public void resetDialogue()
     {
-        this.textComponent.text = string.Empty;
-        this.textLines = Array.Empty<string>();
-        this.textIterId = 0;
+        textComponent.text = string.Empty;
+        textLines = Array.Empty<string>();
+        textIterId = 0;
     }
-
-    IEnumerator TypeLine()
-    {
-        foreach (char c in this.textLines[this.textIterId].ToCharArray())
-        {
-            this.textComponent.text += c;
-            yield return new WaitForSeconds(this.textSpeed);
-        }
-    }
-    void LoadLine()
-    {
-        this.textComponent.text = string.Empty;
-        StartCoroutine(TypeLine());
-    }
-
-
 }
