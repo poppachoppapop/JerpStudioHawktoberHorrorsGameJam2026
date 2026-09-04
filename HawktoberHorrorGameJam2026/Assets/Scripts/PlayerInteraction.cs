@@ -14,6 +14,9 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField]
     public InputActionReference interact, moveRef;
 
+    [SerializeField]
+    private InputActionReference inventory;
+
     private GameObject interactableObject;
 
     private string[] objectText;
@@ -22,16 +25,22 @@ public class PlayerInteraction : MonoBehaviour
     [SerializeField]
     private Dialogue dialogueBox;
     private bool dialogueIsActive;
+    private bool inventoryIsActive;
+
+    [SerializeField]
+    private Canvas inventoryCanvas;
 
     void Start()
     {
         //dialogueBox = transform.GetChild(0).transform.GetChild(0).GetComponent<Dialogue>();
         ToggleDialogue(false);
+        ToggleInventory(false);
     }
 
     void Update()
     {
         LoadInteractAction();
+        LoadInventoryAction();
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -73,6 +82,43 @@ public class PlayerInteraction : MonoBehaviour
                 ToggleDialogue(false);
         }
     }
+
+    void LoadInventoryAction()
+    {
+        if (inventory.action.WasPressedThisFrame())
+        {
+            if (!inventoryIsActive)
+            {
+                ToggleInventory(true);
+                //Debug.Log("this is on");
+            }
+            else 
+            {
+                ToggleInventory(false);
+                //Debug.Log("this is off");
+            }
+        }
+
+    }
+
+    void ToggleInventory(bool active)
+    {
+
+        if(!inventoryCanvas) return;
+
+
+        if (active)
+        {
+            inventoryCanvas.gameObject.SetActive(true);
+            inventoryIsActive = true;
+        }
+        else
+        {
+            inventoryCanvas.gameObject.SetActive(false);
+            inventoryIsActive = false;
+        }
+    }
+
     void ToggleDialogue(bool active)
     {
         if (!dialogueBox) return; //terminate early if null dialogueBox
