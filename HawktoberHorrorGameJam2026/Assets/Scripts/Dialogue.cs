@@ -14,6 +14,11 @@ public class Dialogue : MonoBehaviour
     public string[] textLines;
     private int textIterId;
 
+    [Header("DialogueSFX")]
+    [SerializeField] private AudioSource voiceSource;
+    [SerializeField] private AudioClip[] voiceSounds;
+    [SerializeField] private bool randomPitch = false;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,6 +30,15 @@ public class Dialogue : MonoBehaviour
     {
         foreach (char c in textLines[textIterId].ToCharArray())
         {
+            if (voiceSource != null)
+            {
+                voiceSource.clip = voiceSounds[0];
+                if (randomPitch)
+                {
+                    voiceSource.pitch = UnityEngine.Random.Range(0.5f, 1.2f);
+                }
+                voiceSource.Play();
+            }
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }

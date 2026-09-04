@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Input System")]
     [SerializeField] 
-    private InputActionReference movement;
+    public InputActionReference movement;
 
     [Header("Movement Values")]
     [SerializeField] private float maxSpeed = 8f;

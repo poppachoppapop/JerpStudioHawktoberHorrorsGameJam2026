@@ -12,7 +12,7 @@ public class PlayerInteraction : MonoBehaviour
 
     [Header("Input System")]
     [SerializeField]
-    private InputActionReference interact;
+    public InputActionReference interact, moveRef;
 
     private GameObject interactableObject;
 
@@ -26,8 +26,8 @@ public class PlayerInteraction : MonoBehaviour
     void Start()
     {
         //dialogueBox = transform.GetChild(0).transform.GetChild(0).GetComponent<Dialogue>();
-       ToggleDialogue(false); 
-    } 
+        ToggleDialogue(false);
+    }
 
     void Update()
     {
@@ -58,33 +58,39 @@ public class PlayerInteraction : MonoBehaviour
         // ITEM INTERACTION
         // EVENT INTERACTION
 
+        // Picture interaction
+        
+
+        //text interaction
         if (interactableObject != null && interact.action.WasPressedThisFrame())
         {
             Debug.Log(objectText);
             //Input textbox stuff here and pass objectText into it
-            if (!dialogueIsActive) 
+            if (!dialogueIsActive)
                 ToggleDialogue(true);
 
-            else if (!dialogueBox.NextLine()) 
-                ToggleDialogue(false); 
+            else if (!dialogueBox.NextLine())
+                ToggleDialogue(false);
         }
     }
     void ToggleDialogue(bool active)
     {
         if (!dialogueBox) return; //terminate early if null dialogueBox
 
-	    if (active) 
-	    {
-		    dialogueBox.gameObject.SetActive(true);
-		    dialogueBox.StartDialogue(objectText);
-		    dialogueIsActive = true;
-	    }
-	    else
-	    {
-		    dialogueBox.resetDialogue();
-		    dialogueBox.gameObject.SetActive(false); //?error "Object reference not set to an instance of an object" here. Is this because the reference is lost when inactive?.
-		    dialogueIsActive = false;
-	    }
+        if (active)
+        {
+            dialogueBox.gameObject.SetActive(true);
+            dialogueBox.StartDialogue(objectText);
+            dialogueIsActive = true;
+            moveRef.action.Disable();
+        }
+        else
+        {
+            dialogueBox.resetDialogue();
+            dialogueBox.gameObject.SetActive(false); //?error "Object reference not set to an instance of an object" here. Is this because the reference is lost when inactive?.
+            dialogueIsActive = false;
+            moveRef.action.Enable();
+        }
     }
 
 }

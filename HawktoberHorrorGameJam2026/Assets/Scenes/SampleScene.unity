@@ -430,6 +430,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
   interact: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  moveRef: {fileID: 0}
   dialogueBox: {fileID: 0}
 --- !u!1001 &1088859081
 PrefabInstance:
@@ -439,6 +440,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1991409051267549482, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: moveRef
+      value: 
+      objectReference: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
     - target: {fileID: 4230897823771313315, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.028012574
@@ -479,6 +484,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: randomPitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: 'voiceSounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c727d55153d22db4086cef993d143ec7, type: 3}
     - target: {fileID: 6623370684635525441, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
