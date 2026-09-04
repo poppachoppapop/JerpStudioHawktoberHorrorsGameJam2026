@@ -19,9 +19,7 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private AudioClip[] voiceSounds;
     [SerializeField] private bool randomPitch = false;
 
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         resetDialogue();
     }

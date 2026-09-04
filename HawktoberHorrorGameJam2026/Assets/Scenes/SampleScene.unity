@@ -321,6 +321,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &490987486 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6092650852891371842, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+  m_PrefabInstance: {fileID: 1088859081}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,9 +561,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1418d0420e6339f43a47ad49faf93544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
-  interact: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  moveRef: {fileID: 0}
-  dialogueBox: {fileID: 0}
+  interactInputRef: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  moveInputRef: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  dialogueBox: {fileID: 853852100}
+--- !u!1 &853852094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6719262048393801162, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+  m_PrefabInstance: {fileID: 1088859081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &853852096 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 571817426064894729, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+  m_PrefabInstance: {fileID: 1088859081}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &853852100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853852094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8a70987cef5a2c41938010fb1f78f7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
+  textComponent: {fileID: 490987486}
+  textSpeed: 0.1
+  textLines:
+  - rat!!!!
+  - gay rat!!!!
+  voiceSource: {fileID: 853852096}
+  voiceSounds:
+  - {fileID: 0}
+  randomPitch: 1
 --- !u!1001 &1088859081
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -565,6 +607,14 @@ PrefabInstance:
       propertyPath: moveRef
       value: 
       objectReference: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    - target: {fileID: 2051017034072843903, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2051017034072843903, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -325
+      objectReference: {fileID: 0}
     - target: {fileID: 4230897823771313315, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.028012574
@@ -606,8 +656,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: textSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
       propertyPath: randomPitch
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: voiceSource
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: textComponent
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: textLines.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      propertyPath: voiceSounds.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
       propertyPath: 'voiceSounds.Array.data[0]'
@@ -629,13 +699,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5778454837240839461, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7956966969155907400, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
-      insertIndex: -1
+      insertIndex: 3
       addedObject: {fileID: 770849864}
+    - targetCorrespondingSourceObject: {fileID: 6719262048393801162, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853852100}
   m_SourcePrefab: {fileID: 100100000, guid: ec9de3320c39a61419670a3e24029f7a, type: 3}
 --- !u!1001 &1223386284
 PrefabInstance:

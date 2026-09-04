@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4230897823771313315}
   - component: {fileID: 189872496647620788}
   - component: {fileID: 1774883251915362434}
-  - component: {fileID: 1991409051267549482}
   - component: {fileID: 7061649348671633847}
   - component: {fileID: 1077348560872383250}
   - component: {fileID: 4383340713278290507}
@@ -120,21 +119,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4aae559d387ec3e4e82db11752aa8e9e, type: 3}
   - {fileID: 8300000, guid: 303e72e9caf2e9442b1adfdf868892ef, type: 3}
   stepSource: {fileID: 4383340713278290507}
---- !u!114 &1991409051267549482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7956966969155907400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1418d0420e6339f43a47ad49faf93544, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
-  interact: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  moveRef: {fileID: 0}
-  dialogueBox: {fileID: 5778454837240839461}
 --- !u!50 &7061649348671633847
 Rigidbody2D:
   serializedVersion: 5
@@ -419,14 +403,3 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8368378601869869578, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
   m_PrefabInstance: {fileID: 6195033510183883083}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5778454837240839461 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 416613926714109038, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
-  m_PrefabInstance: {fileID: 6195033510183883083}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8a70987cef5a2c41938010fb1f78f7f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Dialogue
