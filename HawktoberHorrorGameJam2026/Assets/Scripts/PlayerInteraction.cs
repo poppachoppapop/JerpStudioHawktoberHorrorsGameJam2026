@@ -59,18 +59,32 @@ public class PlayerInteraction : MonoBehaviour
         // EVENT INTERACTION
 
         // Picture interaction
-        
+        //Make picture visible
 
         //text interaction
         if (interactableObject != null && interact.action.WasPressedThisFrame())
         {
+            InteractableObj obj = interactableObject.GetComponent<InteractableObj>();
+
             Debug.Log(objectText);
             //Input textbox stuff here and pass objectText into it
             if (!dialogueIsActive)
+            {
                 ToggleDialogue(true);
 
+                if (obj != null && obj.imageBased)
+                    obj.ViewPicture();
+            }
+
             else if (!dialogueBox.NextLine())
+            {
+                if (obj != null && obj.imageBased)
+                    obj.ClosePicture();
+                    
                 ToggleDialogue(false);
+            }
+
+
         }
     }
     void ToggleDialogue(bool active)
