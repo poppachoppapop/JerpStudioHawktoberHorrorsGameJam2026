@@ -41,7 +41,6 @@ public class Inventory : MonoBehaviour
                 //Debug.Log("inventory off");
             }
         }
-
     }
 
     void ToggleInventory(bool active)

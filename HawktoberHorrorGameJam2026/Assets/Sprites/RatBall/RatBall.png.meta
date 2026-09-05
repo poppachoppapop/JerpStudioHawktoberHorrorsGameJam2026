@@ -1,0 +1,1102 @@
+fileFormatVersion: 2
+guid: 43ca9fd1d54d849bb8c1d0de33efa902
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1601742259378830673
+    second: RatBall_0
+  - first:
+      213: -5066170464634319837
+    second: RatBall_1
+  - first:
+      213: 487739657902293000
+    second: RatBall_2
+  - first:
+      213: -3077993349947291071
+    second: RatBall_3
+  - first:
+      213: -7252031997688798264
+    second: RatBall_4
+  - first:
+      213: 692933840271518296
+    second: RatBall_5
+  - first:
+      213: 6258991701158462181
+    second: RatBall_6
+  - first:
+      213: 2872091501225549299
+    second: RatBall_7
+  - first:
+      213: 6716676148703970618
+    second: RatBall_8
+  - first:
+      213: 1184961403216066256
+    second: RatBall_9
+  - first:
+      213: -7132224367634564921
+    second: RatBall_10
+  - first:
+      213: 8998568235682649896
+    second: RatBall_11
+  - first:
+      213: 118848390119385884
+    second: RatBall_12
+  - first:
+      213: 8103648386792068116
+    second: RatBall_13
+  - first:
+      213: -1803379711598844121
+    second: RatBall_14
+  - first:
+      213: 7695851491016146249
+    second: RatBall_15
+  - first:
+      213: 7312725960975191018
+    second: RatBall_16
+  - first:
+      213: 8359968853795394863
+    second: RatBall_17
+  - first:
+      213: 6277560286782468252
+    second: RatBall_18
+  - first:
+      213: 4749674129963877379
+    second: RatBall_19
+  - first:
+      213: 2471553815134479081
+    second: RatBall_20
+  - first:
+      213: 2072406557564156161
+    second: RatBall_21
+  - first:
+      213: -1927401124694659764
+    second: RatBall_22
+  - first:
+      213: 8879134472667953777
+    second: RatBall_23
+  - first:
+      213: 1344772827501779850
+    second: RatBall_24
+  - first:
+      213: 2242897106235935634
+    second: RatBall_25
+  - first:
+      213: -4580446762740423128
+    second: RatBall_26
+  - first:
+      213: 3250103184599967023
+    second: RatBall_27
+  - first:
+      213: 6365509093215923437
+    second: RatBall_28
+  - first:
+      213: 8874214114162576889
+    second: RatBall_29
+  - first:
+      213: -2126451955414354204
+    second: RatBall_30
+  - first:
+      213: 5748405700737165699
+    second: RatBall_31
+  - first:
+      213: -2696565035150768312
+    second: RatBall_32
+  - first:
+      213: -5356303183986014020
+    second: RatBall_33
+  - first:
+      213: 1034563655100246737
+    second: RatBall_34
+  - first:
+      213: -8879987045112202136
+    second: RatBall_35
+  - first:
+      213: -3713946659559479189
+    second: RatBall_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RatBall_0
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 314
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15db10839188a3610800000000000000
+      internalID: 1601742259378830673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 338
+        width: 17
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c45ebddc851b9b0800000000000000
+      internalID: -5066170464634319837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 336
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 800032c72acc4c600800000000000000
+      internalID: 487739657902293000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_3
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 331
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a806b2b55c845d0800000000000000
+      internalID: -3077993349947291071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_4
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 333
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c32efd225b9b5b90800000000000000
+      internalID: -7252031997688798264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_5
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 331
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a2b3a08abcd9900800000000000000
+      internalID: 692933840271518296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_6
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 330
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e20ba76ac76cd650800000000000000
+      internalID: 6258991701158462181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_7
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 325
+        width: 10
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd97fcd008bbd720800000000000000
+      internalID: 2872091501225549299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_8
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 314
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35c6daee5d663d50800000000000000
+      internalID: 6716676148703970618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 304
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d6fd373e14d17010800000000000000
+      internalID: 1184961403216066256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_10
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 320
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8b1ccc9bf350d90800000000000000
+      internalID: -7132224367634564921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_11
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 320
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8275af6422651ec70800000000000000
+      internalID: 8998568235682649896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_12
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 318
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b613b2bfb36a100800000000000000
+      internalID: 118848390119385884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_13
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 316
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4149867d541f57070800000000000000
+      internalID: 8103648386792068116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_14
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 312
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727210ff4bb19f6e0800000000000000
+      internalID: -1803379711598844121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_15
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 310
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94d7d2e18282dca60800000000000000
+      internalID: 7695851491016146249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_16
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 310
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb04bb54850c7560800000000000000
+      internalID: 7312725960975191018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_17
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 310
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25ddc72163940470800000000000000
+      internalID: 8359968853795394863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_18
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 2
+        width: 336
+        height: 356
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90b4c522df5e1750800000000000000
+      internalID: 6277560286782468252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_19
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 306
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3040c53d47b3ae140800000000000000
+      internalID: 4749674129963877379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_20
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 305
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e22a5a9919bc4220800000000000000
+      internalID: 2471553815134479081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_21
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 306
+        width: 20
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1093dc5b8caa2cc10800000000000000
+      internalID: 2072406557564156161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_22
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 304
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4de2ee83ee7045e0800000000000000
+      internalID: -1927401124694659764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_23
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 302
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a7c4c52c5093b70800000000000000
+      internalID: 8879134472667953777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_24
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 299
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b57def2c799a210800000000000000
+      internalID: 1344772827501779850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_25
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 296
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29bc1f4e80f502f10800000000000000
+      internalID: 2242897106235935634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_26
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 296
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826e44200fbfe60c0800000000000000
+      internalID: -4580446762740423128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_27
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 295
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25627960afaa1d20800000000000000
+      internalID: 3250103184599967023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_28
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 5
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dec67ab5bc4d65850800000000000000
+      internalID: 6365509093215923437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_29
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 5
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fd0b6f18ba872b70800000000000000
+      internalID: 8874214114162576889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_30
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 4
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6b79586335d72e0800000000000000
+      internalID: -2126451955414354204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_31
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 5
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389e449478076cf40800000000000000
+      internalID: 5748405700737165699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_32
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 4
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84789163360e39ad0800000000000000
+      internalID: -2696565035150768312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_33
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 5
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb8483112a69aa5b0800000000000000
+      internalID: -5356303183986014020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_34
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 10
+        width: 9
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1daa7c7b9228b5e00800000000000000
+      internalID: 1034563655100246737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_35
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1
+        width: 13
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86c3406a4d2f3c480800000000000000
+      internalID: -8879987045112202136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_36
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1
+        width: 9
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b686532c039657cc0800000000000000
+      internalID: -3713946659559479189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RatBall_37
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 360
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f1e880ec1a140f98800b41402f254a
+      internalID: -1271907287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e7b350bb22f4c452d8334f9ffe87ba82
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      RatBall_0: 1601742259378830673
+      RatBall_1: -5066170464634319837
+      RatBall_10: -7132224367634564921
+      RatBall_11: 8998568235682649896
+      RatBall_12: 118848390119385884
+      RatBall_13: 8103648386792068116
+      RatBall_14: -1803379711598844121
+      RatBall_15: 7695851491016146249
+      RatBall_16: 7312725960975191018
+      RatBall_17: 8359968853795394863
+      RatBall_18: 6277560286782468252
+      RatBall_19: 4749674129963877379
+      RatBall_2: 487739657902293000
+      RatBall_20: 2471553815134479081
+      RatBall_21: 2072406557564156161
+      RatBall_22: -1927401124694659764
+      RatBall_23: 8879134472667953777
+      RatBall_24: 1344772827501779850
+      RatBall_25: 2242897106235935634
+      RatBall_26: -4580446762740423128
+      RatBall_27: 3250103184599967023
+      RatBall_28: 6365509093215923437
+      RatBall_29: 8874214114162576889
+      RatBall_3: -3077993349947291071
+      RatBall_30: -2126451955414354204
+      RatBall_31: 5748405700737165699
+      RatBall_32: -2696565035150768312
+      RatBall_33: -5356303183986014020
+      RatBall_34: 1034563655100246737
+      RatBall_35: -8879987045112202136
+      RatBall_36: -3713946659559479189
+      RatBall_37: -1271907287
+      RatBall_4: -7252031997688798264
+      RatBall_5: 692933840271518296
+      RatBall_6: 6258991701158462181
+      RatBall_7: 2872091501225549299
+      RatBall_8: 6716676148703970618
+      RatBall_9: 1184961403216066256
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
