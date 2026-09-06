@@ -3,15 +3,15 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Item", menuName = "Scriptable Objects/Item")]
 public class Item : ScriptableObject 
 {    
-    private string slotId;
+    public int slotId;
 
     [SerializeField]
-    private string itemName;
+    public string itemName;
 
     [SerializeField]
-    private string itemDesc;
+    public string itemDesc;
     
     [SerializeField]
-    private Sprite itemSprite;
+    public Sprite itemSprite;
 }
 
