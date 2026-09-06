@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3937570454271493173, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
+      propertyPath: 'voiceSounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c727d55153d22db4086cef993d143ec7, type: 3}
     - target: {fileID: 8368378601869869578, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0

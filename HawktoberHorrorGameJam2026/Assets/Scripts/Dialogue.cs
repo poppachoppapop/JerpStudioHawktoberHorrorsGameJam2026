@@ -38,7 +38,10 @@ public class Dialogue : MonoBehaviour
                 voiceSource.Play();
             }
             textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
+            if (c == '.')
+                yield return new WaitForSeconds(textSpeed*3);
+            else
+                yield return new WaitForSeconds(textSpeed);
         }
     }
     void LoadLine()
