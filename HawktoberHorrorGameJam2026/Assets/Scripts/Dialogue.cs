@@ -39,7 +39,7 @@ public class Dialogue : MonoBehaviour
             }
             textComponent.text += c;
             if (c == '.')
-                yield return new WaitForSeconds(textSpeed*3);
+                yield return new WaitForSeconds(textSpeed*4);
             else
                 yield return new WaitForSeconds(textSpeed);
         }

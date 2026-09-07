@@ -7,7 +7,7 @@ public class CameraManager : MonoBehaviour
 
     public Transform pTrans;
 
-    [SerializeField] float screenHeight = 10, screenWidth = 15;
+    [SerializeField] float screenHeight = 10, screenWidth = 13.33f;
 
     private Vector3 targetPos;
     void Start()
