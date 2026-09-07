@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProximitySpawn
   spawnableObject: {fileID: 0}
-  distanceTrigger: 10
+  distanceTrigger: 3
