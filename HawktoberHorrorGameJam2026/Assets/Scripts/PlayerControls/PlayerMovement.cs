@@ -10,7 +10,7 @@ using UnityEngine.Rendering;
 public class PlayerMovement : MonoBehaviour
 {
     [Header("Input System")]
-    [SerializeField] 
+    [SerializeField]
     public InputActionReference movement;
 
     [Header("Movement Values")]
@@ -23,13 +23,19 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float stepTimerMax = 0.5f;
     [SerializeField] AudioClip[] steps;
     [SerializeField] AudioSource stepSource;
-    
+
+    [Header("Animation")]
+    [SerializeField] Animator anim;
+    [SerializeField] SpriteRenderer sr;
+
     Rigidbody2D rb;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         stepSource = GetComponent<AudioSource>();
+        anim = GetComponent<Animator>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -48,10 +54,31 @@ public class PlayerMovement : MonoBehaviour
         //Apply velocity
         rb.linearVelocity = Vector2.MoveTowards(rb.linearVelocity, targetVelocity, accelerationRate * Time.deltaTime);
 
-        // If you are walking, trigger the steps function
+
+
+        // If you are walking, trigger the steps function and walk anim
         if (accelerationRate == acceleration)
+        {
             StepTrigger();
-        
+            anim.SetTrigger("Walk");
+        }
+        else
+        {
+            anim.SetTrigger("StopWalk");
+        }
+
+        // Decide
+        if (movement.action.ReadValue<Vector2>().x > 0)
+        {
+            sr.flipX = true;
+        }
+        else if (movement.action.ReadValue<Vector2>().x < 0)
+        {
+            sr.flipX = false;
+        }
+
+
+
     }
 
     void StepTrigger()

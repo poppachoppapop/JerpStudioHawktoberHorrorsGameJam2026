@@ -30,16 +30,15 @@ public class Dialogue : MonoBehaviour
         {
             if (voiceSource != null)
             {
-                voiceSource.clip = voiceSounds[0];
                 if (randomPitch)
                 {
                     voiceSource.pitch = UnityEngine.Random.Range(0.5f, 1.2f);
                 }
-                voiceSource.Play();
+                voiceSource.PlayOneShot(voiceSounds[0]);
             }
             textComponent.text += c;
             if (c == '.')
-                yield return new WaitForSeconds(textSpeed*3);
+                yield return new WaitForSeconds(textSpeed*4);
             else
                 yield return new WaitForSeconds(textSpeed);
         }
