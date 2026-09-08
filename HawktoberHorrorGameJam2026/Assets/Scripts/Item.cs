@@ -2,8 +2,9 @@ using UnityEngine;
 
 [CreateAssetMenu(fileName = "Item", menuName = "Scriptable Objects/Item")]
 public class Item : ScriptableObject 
-{    
-    public int slotId;
+{
+    [SerializeField]
+    public int itemID;
 
     [SerializeField]
     public string itemName;

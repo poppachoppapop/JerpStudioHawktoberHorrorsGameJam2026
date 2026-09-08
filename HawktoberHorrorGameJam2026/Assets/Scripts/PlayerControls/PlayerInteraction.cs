@@ -25,6 +25,9 @@ public class PlayerInteraction : MonoBehaviour
     private Dialogue dialogueBox;
     private bool dialogueIsActive;
 
+    [SerializeField]
+    public Inventory inventory;
+
 
 
     void Start()
@@ -80,14 +83,20 @@ public class PlayerInteraction : MonoBehaviour
 
                 if (obj != null && obj.imageBased)
                     obj.ViewPicture();
+                    
             }
-
+            
             else if (!dialogueBox.NextLine())
             {
                 if (obj != null && obj.imageBased)
                     obj.ClosePicture();
                     
                 ToggleDialogue(false);
+            }
+
+            if (obj.itemBased > 0)
+            {
+                inventory.AddItem((obj.itemBased % 10) - 1);
             }
 
 

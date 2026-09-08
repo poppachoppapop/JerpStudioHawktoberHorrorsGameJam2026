@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class InteractableObj : MonoBehaviour
@@ -7,9 +9,13 @@ public class InteractableObj : MonoBehaviour
  
     //Image based interactable object
     
-    [Header("Piicture Stuff")]
+    [Header("Picture Stuff")]
     [SerializeField] public bool imageBased = false;
     [SerializeField] private GameObject picture;
+
+    [Header("Item Stuff")]
+    [SerializeField] public int itemBased = 0;
+
 
     public void ViewPicture()
     {
@@ -20,5 +26,4 @@ public class InteractableObj : MonoBehaviour
     {
         picture.SetActive(false);
     }
-
 }
