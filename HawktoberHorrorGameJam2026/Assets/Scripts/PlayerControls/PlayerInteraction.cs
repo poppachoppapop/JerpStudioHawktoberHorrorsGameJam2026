@@ -25,6 +25,9 @@ public class PlayerInteraction : MonoBehaviour
     private Dialogue dialogueBox;
     private bool dialogueIsActive;
 
+    [SerializeField] private GameObject blackFade;
+    bool imageInteraction = false;
+
 
 
     void Start()
@@ -45,6 +48,8 @@ public class PlayerInteraction : MonoBehaviour
         if (col.gameObject.tag == "Interactable")
         {
             objectText = col.GetComponent<InteractableObj>().textInput;
+            if (col.GetComponent<InteractableObj>().imageBased)
+                imageInteraction = true;
             interactableObject = col.gameObject;
         }
     }
@@ -54,6 +59,7 @@ public class PlayerInteraction : MonoBehaviour
         if (col.gameObject.tag == "Interactable")
         {
             interactableObject = null;
+            imageInteraction = false;
         }
     }
 
@@ -77,6 +83,7 @@ public class PlayerInteraction : MonoBehaviour
             if (!dialogueIsActive)
             {
                 ToggleDialogue(true);
+                blackFade.SetActive(imageInteraction);
 
                 if (obj != null && obj.imageBased)
                     obj.ViewPicture();
@@ -110,6 +117,7 @@ public class PlayerInteraction : MonoBehaviour
             dialogueBox.gameObject.SetActive(false); //?error "Object reference not set to an instance of an object" here. Is this because the reference is lost when inactive?.
             dialogueIsActive = false;
             moveInputRef.action.Enable();
+            blackFade.SetActive(false);
         }
     }
 

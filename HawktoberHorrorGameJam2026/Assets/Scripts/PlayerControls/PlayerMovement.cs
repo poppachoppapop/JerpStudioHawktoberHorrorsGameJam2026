@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Rendering;
+using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -87,8 +88,8 @@ public class PlayerMovement : MonoBehaviour
         if (stepTimer > stepTimerMax)
         {
             int randomStep = Random.Range(0, steps.Length);
-            stepSource.clip = steps[randomStep];
-            stepSource.Play();
+            stepSource.pitch = UnityEngine.Random.Range(0.8f, 1.1f);
+            stepSource.PlayOneShot(steps[randomStep]);
             stepTimer = 0;
         }
     }

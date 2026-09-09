@@ -120,7 +120,10 @@ MonoBehaviour:
   steps:
   - {fileID: 8300000, guid: 4aae559d387ec3e4e82db11752aa8e9e, type: 3}
   - {fileID: 8300000, guid: 303e72e9caf2e9442b1adfdf868892ef, type: 3}
+  - {fileID: 8300000, guid: 4133522a91f89b94f8b8180bba76b1be, type: 3}
   stepSource: {fileID: 4383340713278290507}
+  anim: {fileID: 0}
+  sr: {fileID: 0}
 --- !u!114 &-6546740800980525211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +139,7 @@ MonoBehaviour:
   interactInputRef: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   moveInputRef: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   dialogueBox: {fileID: 7159634139099682174}
+  blackFade: {fileID: 2474586807083185407}
 --- !u!50 &7061649348671633847
 Rigidbody2D:
   serializedVersion: 5
@@ -360,6 +364,10 @@ PrefabInstance:
       propertyPath: 'voiceSounds.Array.data[0]'
       value: 
       objectReference: {fileID: 8300000, guid: c727d55153d22db4086cef993d143ec7, type: 3}
+    - target: {fileID: 4591670385942404835, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8368378601869869578, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -448,6 +456,11 @@ PrefabInstance:
 --- !u!224 &2439642749189346113 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8368378601869869578, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
+  m_PrefabInstance: {fileID: 6195033510183883083}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2474586807083185407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8623920155772675508, guid: c3318f4815a934a42b0dc9f609b299ca, type: 3}
   m_PrefabInstance: {fileID: 6195033510183883083}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &7159634139099682174 stripped

@@ -10,15 +10,21 @@ public class InteractableObj : MonoBehaviour
     [Header("Piicture Stuff")]
     [SerializeField] public bool imageBased = false;
     [SerializeField] private GameObject picture;
+    [SerializeField] private Canvas canvasRef;
 
+    void Start()
+    {
+        if (canvasRef == null)
+            canvasRef = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
+    }
     public void ViewPicture()
     {
-        picture.SetActive(true);
+        picture.transform.SetParent(canvasRef.transform);
     }
 
     public void ClosePicture()
     {
-        picture.SetActive(false);
+        picture.transform.SetParent(transform);
     }
 
 }

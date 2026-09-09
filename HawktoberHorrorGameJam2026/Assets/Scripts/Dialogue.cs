@@ -34,7 +34,8 @@ public class Dialogue : MonoBehaviour
                 {
                     voiceSource.pitch = UnityEngine.Random.Range(0.5f, 1.2f);
                 }
-                voiceSource.PlayOneShot(voiceSounds[0]);
+                if (c != '.')
+                    voiceSource.PlayOneShot(voiceSounds[0]);
             }
             textComponent.text += c;
             if (c == '.')
