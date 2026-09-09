@@ -27,6 +27,9 @@ public class PlayerInteraction : MonoBehaviour
 
     [SerializeField] private GameObject blackFade;
     bool imageInteraction = false;
+    
+    
+    [SerializeField]public Inventory inventory;
 
 
 
@@ -87,14 +90,20 @@ public class PlayerInteraction : MonoBehaviour
 
                 if (obj != null && obj.imageBased)
                     obj.ViewPicture();
+                    
             }
-
+            
             else if (!dialogueBox.NextLine())
             {
                 if (obj != null && obj.imageBased)
                     obj.ClosePicture();
                     
                 ToggleDialogue(false);
+            }
+
+            if (obj.itemBased > 0)
+            {
+                inventory.AddItem((obj.itemBased % 10) - 1);
             }
 
 

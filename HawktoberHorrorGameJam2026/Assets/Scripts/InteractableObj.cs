@@ -1,3 +1,5 @@
+using JetBrains.Annotations;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class InteractableObj : MonoBehaviour
@@ -7,16 +9,20 @@ public class InteractableObj : MonoBehaviour
  
     //Image based interactable object
     
-    [Header("Piicture Stuff")]
+    [Header("Picture Stuff")]
     [SerializeField] public bool imageBased = false;
     [SerializeField] private GameObject picture;
     [SerializeField] private Canvas canvasRef;
+
+    [Header("Item Stuff")]
+    [SerializeField] public int itemBased = 0;
 
     void Start()
     {
         if (canvasRef == null)
             canvasRef = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
     }
+
     public void ViewPicture()
     {
         picture.transform.SetParent(canvasRef.transform);
@@ -26,5 +32,4 @@ public class InteractableObj : MonoBehaviour
     {
         picture.transform.SetParent(transform);
     }
-
 }

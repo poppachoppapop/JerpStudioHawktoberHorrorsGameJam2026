@@ -9,8 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1137a05a5f0c63c4c808243b3c9ad537, type: 3}
+  m_Script: {fileID: 11500000, guid: bc64958487ec5429596c50f24ef34ae6, type: 3}
   m_Name: BathroomKey
-  m_EditorClassIdentifier: Assembly-CSharp::InventoryItem
-  inventoryItemID: 1001
-  itemDescription: this key is meant to open the bathroom ya nut
+  m_EditorClassIdentifier: Assembly-CSharp::Item
+  itemName: 
+  itemDesc: 
+  itemSprite: {fileID: 0}
