@@ -20,6 +20,11 @@ public class PlayerInteraction : MonoBehaviour
 
     private string[] objectText;
 
+    [SerializeField]
+    private AudioSource playerAudioSource;
+    [SerializeField]
+    private AudioClip playerInteractSound;
+
 
     [SerializeField]
     private Dialogue dialogueBox;
@@ -80,6 +85,8 @@ public class PlayerInteraction : MonoBehaviour
         if (interactableObject != null && interactInputRef.action.WasPressedThisFrame())
         {
             InteractableObj obj = interactableObject.GetComponent<InteractableObj>();
+
+            //playerAudioSource.PlayOneShot(playerInteractSound);
 
             Debug.Log(objectText);
             //Input textbox stuff here and pass objectText into it

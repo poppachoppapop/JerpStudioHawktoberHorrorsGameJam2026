@@ -1,9 +1,8 @@
 using UnityEngine;
 
-public class RoomScript : MonoBehaviour
+public class DoorScript : MonoBehaviour
 {
-    [SerializeField]
-    private bool IsLargeRoom = false;
+    [SerializeField] RoomScript room;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

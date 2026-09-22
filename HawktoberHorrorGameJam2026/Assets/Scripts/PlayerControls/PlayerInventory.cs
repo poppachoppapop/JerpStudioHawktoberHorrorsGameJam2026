@@ -11,6 +11,14 @@ public class PlayerInventory : MonoBehaviour
     private bool inventoryIsActive;
 
     [SerializeField]
+    private AudioSource playerAudioSource;
+
+    [SerializeField]
+    private AudioClip openingSound;
+    [SerializeField]
+    private AudioClip closingSound;
+
+    [SerializeField]
     private Inventory inventoryCanvas;
 
 
@@ -36,11 +44,13 @@ public class PlayerInventory : MonoBehaviour
             if (!inventoryIsActive)
             {
                 ToggleInventory(true);
+                playerAudioSource.PlayOneShot(openingSound);
                 //Debug.Log("inventory on");
             }
             else 
             {
                 ToggleInventory(false);
+                playerAudioSource.PlayOneShot(closingSound);
                 //Debug.Log("inventory off");
             }
         }
