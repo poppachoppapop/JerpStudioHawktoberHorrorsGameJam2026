@@ -6,7 +6,7 @@ public class FadeCamera : MonoBehaviour
 {
 
     [SerializeField] private Image fadeImage;
-    private float fadeSpeed = 0.35f;
+    private float fadeSpeed = 1.0f;
 
     private float targetAlpha = 0.0f;
     private float currentAlpha = 1.0f;

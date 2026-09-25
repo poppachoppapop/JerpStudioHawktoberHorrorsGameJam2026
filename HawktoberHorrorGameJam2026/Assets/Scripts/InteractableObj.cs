@@ -1,5 +1,5 @@
-using JetBrains.Annotations;
-using Microsoft.Unity.VisualStudio.Editor;
+// using JetBrains.Annotations;
+// using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 
 public class InteractableObj : MonoBehaviour
