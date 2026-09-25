@@ -3,7 +3,7 @@ using UnityEngine;
 public class DoorScript : MonoBehaviour
 {
     [SerializeField]
-    private RoomScript connectedRoom;
+    private Transform connectedRoom;
 
     [SerializeField]
     private GameObject player;
@@ -40,8 +40,8 @@ public class DoorScript : MonoBehaviour
         if (col.gameObject.tag == "Player")
         {
             mainCamera.transform.position = new Vector3(
-            connectedRoom.transform.position.x,
-            connectedRoom.transform.position.y,
+            connectedRoom.position.x,
+            connectedRoom.position.y,
             -10);
 
             player.transform.position = new Vector3(connectedRoom.transform.position.x,
