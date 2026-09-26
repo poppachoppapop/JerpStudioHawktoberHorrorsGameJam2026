@@ -10,6 +10,9 @@ using UnityEngine.UIElements;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField]
+    private Transform roomToSpawnIn;
+
     [Header("Input System")]
     [SerializeField]
     public InputActionReference movement;
@@ -37,6 +40,8 @@ public class PlayerMovement : MonoBehaviour
         stepSource = GetComponent<AudioSource>();
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
+
+        rb.gameObject.transform.position = roomToSpawnIn.transform.position;
     }
 
     void Update()

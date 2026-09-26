@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class CameraManager : MonoBehaviour
 {
-    
+
     // Simple script that moves the camera 7.5 units x axis or 5 units y axis
+
+    [SerializeField]
+    private Transform spawnRoom;
 
     public Transform pTrans;
 
@@ -12,11 +15,16 @@ public class CameraManager : MonoBehaviour
     private Vector3 targetPos;
     void Start()
     {
+        //targetPos = spawnRoom.transform.position;
+        //transform.position = spawnRoom.position;
+       
         targetPos = transform.position;
     }
 
     void Update()
     {
+
+        
         int roomX = Mathf.FloorToInt((pTrans.position.x + (screenWidth / 2f)) / screenWidth);
         int roomY = Mathf.FloorToInt((pTrans.position.y + (screenHeight / 2f)) / screenHeight);
 
@@ -26,5 +34,10 @@ public class CameraManager : MonoBehaviour
         targetPos = new Vector3(targetX, targetY, transform.position.z);
 
         transform.position = targetPos;
+    }
+
+    void SetCamera(Transform targetPosition)
+    {
+        
     }
 }

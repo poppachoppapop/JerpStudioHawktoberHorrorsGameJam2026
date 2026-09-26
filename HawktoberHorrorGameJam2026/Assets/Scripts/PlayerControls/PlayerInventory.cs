@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInventory : MonoBehaviour
 {
-    
+
     [SerializeField]
     private InputActionReference inventoryInputRef; // set to tab in input manager
 
