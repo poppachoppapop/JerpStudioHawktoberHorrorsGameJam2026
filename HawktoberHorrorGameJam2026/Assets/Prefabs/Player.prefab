@@ -113,6 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ae00edc7a1944448a244cf98c81cf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  roomToSpawnIn: {fileID: 0}
   movement: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   maxSpeed: 5
   acceleration: 50
@@ -140,6 +141,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerInteraction
   interactInputRef: {fileID: 1781555164194001046, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   moveInputRef: {fileID: -1680190386980627800, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  playerAudioSource: {fileID: 0}
+  playerInteractSound: {fileID: 0}
   dialogueBox: {fileID: 7159634139099682174}
   blackFade: {fileID: 2474586807083185407}
   inventory: {fileID: 8624679349315516710}
@@ -204,7 +207,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.82}
+  m_Offset: {x: 0, y: -0.68}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -214,7 +217,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.75, y: 0.54}
+  m_Size: {x: 0.66, y: 0.54}
   m_EdgeRadius: 0
 --- !u!82 &4383340713278290507
 AudioSource:
@@ -356,6 +359,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inventory
   inventoryInputRef: {fileID: 6772492202807202015, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  playerAudioSource: {fileID: 0}
+  openingSound: {fileID: 0}
+  closingSound: {fileID: 0}
   inventoryCanvas: {fileID: 8624679349315516710}
 --- !u!1001 &1349145780231522539
 PrefabInstance:
@@ -412,6 +418,10 @@ PrefabInstance:
     - target: {fileID: 1672829248225577162, guid: b84edc64c90bbb44f86359a52f088841, type: 3}
       propertyPath: m_Name
       value: InventoryCanvasPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 1672829248225577162, guid: b84edc64c90bbb44f86359a52f088841, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2290664165102524270, guid: b84edc64c90bbb44f86359a52f088841, type: 3}
       propertyPath: m_AnchorMax.y
