@@ -10,34 +10,34 @@ public class CameraManager : MonoBehaviour
 
     public Transform pTrans;
 
+    [SerializeField]
+    private Transform testRoomTransform;
+
     [SerializeField] float screenHeight = 10, screenWidth = 13.33f;
+
+    
 
     private Vector3 targetPos;
     void Start()
     {
-        //targetPos = spawnRoom.transform.position;
+        targetPos = spawnRoom.position;
+        transform.position = targetPos;
         //transform.position = spawnRoom.position;
        
-        targetPos = transform.position;
+       // targetPos = transform.position;
     }
 
     void Update()
     {
+        // int roomX = Mathf.FloorToInt((pTrans.position.x + (screenWidth / 2f)) / screenWidth);
+        // int roomY = Mathf.FloorToInt((pTrans.position.y + (screenHeight / 2f)) / screenHeight);
 
-        
-        int roomX = Mathf.FloorToInt((pTrans.position.x + (screenWidth / 2f)) / screenWidth);
-        int roomY = Mathf.FloorToInt((pTrans.position.y + (screenHeight / 2f)) / screenHeight);
+        // float targetX = (roomX * screenWidth);
+        // float targetY = (roomY * screenHeight);
 
-        float targetX = (roomX * screenWidth);
-        float targetY = (roomY * screenHeight);
+        // targetPos = new Vector3(targetX, targetY, transform.position.z);
 
-        targetPos = new Vector3(targetX, targetY, transform.position.z);
-
-        transform.position = targetPos;
+        // transform.position = targetPos;
     }
 
-    void SetCamera(Transform targetPosition)
-    {
-        
-    }
 }

@@ -18,7 +18,6 @@ public class DoorScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //     player = FindObjectOfType<Player>();
         mainCamera = GameObject.FindFirstObjectByType<Camera>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -27,17 +26,6 @@ public class DoorScript : MonoBehaviour
     void Update()
     {
 
-    }
-
-    void EnterRoom()
-    {
-        // //setting camera position to new room
-        // mainCamera.transform.position = new Vector3(
-        // connectedRoom.transform.position.x,
-        // connectedRoom.transform.position.y,
-        // transform.position.z);
-
-        // player.transform.position = new Vector3()
     }
 
     void OnTriggerEnter2D(Collider2D col)

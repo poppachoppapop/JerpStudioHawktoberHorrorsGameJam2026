@@ -41,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
         anim = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
 
-        rb.gameObject.transform.position = roomToSpawnIn.transform.position;
+        rb.gameObject.transform.position = roomToSpawnIn.position;
     }
 
     void Update()

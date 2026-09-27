@@ -30,8 +30,10 @@ public class RoomScript : MonoBehaviour
             Debug.Log("No Available Camera to work with");
             return;
         }
+    }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
         
-
     }
 }
