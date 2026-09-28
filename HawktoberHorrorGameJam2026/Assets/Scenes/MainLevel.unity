@@ -5065,6 +5065,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2023106539073026880, guid: 53a2cdfc693a1dc4885eb235d1a14cf2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1137641896}
+    - targetCorrespondingSourceObject: {fileID: 2023106539073026880, guid: 53a2cdfc693a1dc4885eb235d1a14cf2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1623373040}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a2cdfc693a1dc4885eb235d1a14cf2, type: 3}
 --- !u!224 &872495268 stripped
@@ -5677,6 +5680,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4076728234718855421, guid: 53a2cdfc693a1dc4885eb235d1a14cf2, type: 3}
   m_PrefabInstance: {fileID: 1572512095}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1097377834 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5407727778937384921, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
+  m_PrefabInstance: {fileID: 1284682972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1104667542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2265406261980427344, guid: 3bfad21157394544eae919afb896faca, type: 3}
@@ -6074,6 +6082,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1166746546}
     - target: {fileID: 2743771172353920840, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
+      propertyPath: IsLocked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2743771172353920840, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
       propertyPath: doorOffset
       value: 
       objectReference: {fileID: 565814074}
@@ -6084,6 +6096,14 @@ PrefabInstance:
     - target: {fileID: 5407727778937384921, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
       propertyPath: m_Name
       value: DoorToLinenCloset
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961645433464810209, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
+      propertyPath: m_Size.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6961645433464810209, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8600659398233623075, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -6096,13 +6116,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5407727778937384921, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
+      insertIndex: 3
+      addedObject: {fileID: 1284682978}
   m_SourcePrefab: {fileID: 100100000, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
 --- !u!4 &1284682973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 545735038900073771, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
   m_PrefabInstance: {fileID: 1284682972}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1284682978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097377834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42706123c1a818f48956cd0d1bb05695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InteractableObj
+  textInput:
+  - The door is locked.
+  imageBased: 0
+  picture: {fileID: 0}
+  canvasRef: {fileID: 0}
+  itemBased: 0
 --- !u!4 &1288343666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
@@ -7250,6 +7291,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6847337889458341748, guid: c36f293753662c142917688205937cad, type: 3}
   m_PrefabInstance: {fileID: 852768410}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1623373039
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1281178336}
+    m_Modifications:
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.927269
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5877800200998830648, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+      propertyPath: m_Name
+      value: Bed
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+--- !u!4 &1623373040 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}
+  m_PrefabInstance: {fileID: 1623373039}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1626599377
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8251,7 +8358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 545735038900073771, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.52
+      value: -1.41
       objectReference: {fileID: 0}
     - target: {fileID: 545735038900073771, guid: 93bacf53abb34eb4ba398fb3a53ec44e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8401,6 +8508,7 @@ GameObject:
   - component: {fileID: 1742451440}
   - component: {fileID: 1742451444}
   - component: {fileID: 1742451443}
+  - component: {fileID: 1742451445}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -8543,6 +8651,19 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!114 &1742451445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742451439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5ad312d6365ba4f9f5c82beafa4c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FadeCamera
+  fadeImage: {fileID: 0}
 --- !u!4 &1797370869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2521176956699768726, guid: 9cf959a3a50cd1a4ab5aee14d2319f5c, type: 3}

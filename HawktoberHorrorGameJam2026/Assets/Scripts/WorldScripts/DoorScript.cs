@@ -11,6 +11,9 @@ public class DoorScript : MonoBehaviour
     [SerializeField]
     private GameObject player;
 
+    [SerializeField]
+    private bool IsLocked;
+
     //[SerializeField]
     private Camera mainCamera;
 
@@ -28,10 +31,8 @@ public class DoorScript : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D col)
+    void SetCurrentRoom()
     {
-        if (col.gameObject.tag == "Player")
-        {
             mainCamera.transform.position = new Vector3(
             connectedRoomTransform.position.x,
             connectedRoomTransform.position.y,
@@ -40,11 +41,21 @@ public class DoorScript : MonoBehaviour
             // player.transform.position = new Vector3(connectedRoom.transform.position.x,
             // connectedRoom.transform.position.y,
             // transform.position.z);
-            player.transform.position = new Vector3(doorOffset.transform.position.x,
+            player.transform.position = new Vector3(
+            doorOffset.transform.position.x,
             doorOffset.transform.position.y,
             transform.position.z);
+    }
 
-            //Debug.Log("Wassup");
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player" && !IsLocked)
+        {
+            SetCurrentRoom();
+        }
+        else
+        {
+            Debug.Log("Not gonna work big dawg");
         }
     }
 }
